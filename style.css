@@ -1,0 +1,76 @@
+#container {
+    margin: auto;
+    background-color: rgb(198, 76, 247);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 100px;
+    display: grid;
+    grid-template-areas: "display display display"
+                         "buttons buttons operators"
+                         "buttons buttons operators";
+    grid-template-rows: 100px;
+
+}
+
+#display {
+    grid-area: display;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgb(29, 193, 235);
+    height: 70px;
+    text-align: right;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 27px;
+
+}
+#display {
+    grid-column: 1 / -1;
+}
+
+
+#buttons {
+    display: grid;
+    grid-area: buttons;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(8, 46, 168);
+    
+}
+
+.button{
+    background-color: blue;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: blueviolet;
+}
+
+.button:active {
+    background-color: rgb(76, 230, 16);
+}
+
+#operator {
+    display: grid;
+    grid-area: operators;
+}
+
+.operators {
+    background-color: aquamarine;
+    border-radius: 7px;
+    font-size: 30px;
+}
+
+.operators:hover {
+    background-color: rebeccapurple;
+}
+
+.operators:active {
+    background-color: bisque;
+}
