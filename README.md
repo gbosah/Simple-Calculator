@@ -1,1 +1,1 @@
-# Simple-Calculator
+Odin simple calculator.
